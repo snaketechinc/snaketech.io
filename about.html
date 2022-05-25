@@ -821,6 +821,42 @@
 <script src="assets/js/wow.min.js"></script>
 
 <script src="assets/js/custom.js"></script>
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?37314';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+        "enabled":true,
+        "chatButtonSetting":{
+            "backgroundColor":"#09BDA7",
+            "ctaText":"SnakeTech.io",
+            "borderRadius":"25",
+            "marginLeft":"0",
+            "marginBottom":"50",
+            "marginRight":"50",
+            "position":"right"
+        },
+        "brandSetting":{
+            "brandName":"SnakeTech.io",
+            "brandSubTitle":"Typically replies within a day",
+            "brandImg":"https://i.ibb.co/hHZyM0f/20220524-013828-0000.png",
+            "welcomeText":"Hi there!\nHow can I help you?",
+            "messageText":"Hello, I want to discuss with you regarding project inquiry.",
+            "backgroundColor":"#131A18",
+            "ctaText":"Start Chat",
+            "borderRadius":"25",
+            "autoShow":false,
+            "phoneNumber":"919638799626"
+        }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 </body>
 
 <!-- Mirrored from demo-egenslab.b-cdn.net/html/creasoft/preview/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 May 2022 18:35:39 GMT -->
