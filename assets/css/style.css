@@ -2065,6 +2065,9 @@ textarea:-ms-input-placeholder {
 .rn-section-gap {
   padding: 120px 0 !important;
 }
+.rn-section-gap-fix {
+  padding: 120px 0 !important;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rn-section-gap {
     padding: 80px 0 !important;
