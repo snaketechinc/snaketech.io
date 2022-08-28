@@ -439,14 +439,17 @@
             const requestData = convertFormToJSON(form)
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
-            var name = "as"
+            var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+            var today  = new Date();
+
+            const date = today.toLocaleDateString("en-US", options);
             var raw = JSON.stringify({
                 "messaging_product": "whatsapp",
                 "to": "919638799626",
                 "type": "text",
                 "text": {
                     "body": "⭐⭐New Lead From Websit⭐⭐⭐\n" +
-                        "📅🕰️ 28-08-2022 10:00 AM🕰️📅\n" +
+                        "📅🕰️"+date+"🕰️📅\n" +
                         "\n" +
                         "👉 Name: "+requestData.name+"\n" +
                         "👉 Email: "+requestData.email+"\n" +
